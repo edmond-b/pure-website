@@ -4,7 +4,7 @@ body {
   background-color: white;
   text-align: center;
   font-family: sans-serif;
-  min-width: 950px
+  min-width: 900px
 }
 
 header {
@@ -37,7 +37,20 @@ footer {
 }
 
 a {
+  border-style: solid;
+  border-radius: 10px;
+  padding: 10px;
   text-decoration: none;
+}
+
+a:visited {
+  color: red;
+}
+
+a:hover {
+  background-color: red;
+  border-color: red;
+  color: white;
 }
 
 h1 {
