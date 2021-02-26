@@ -1,13 +1,32 @@
 body {
-  margin-left: 500px;
-  margin-right: 500px;
-  margin-top: 150px;
-  padding: 200px;
+  margin: 150px auto;
+  padding: 150px;
   border: 5px solid white;
   border-radius: 20px;
+  min-width: 300px;
+  max-width: 600px;
   background-color: #C4C4C4;
   text-align: center;
   font-family: sans-serif;
+}
+
+header {
+  border: 5px solid white;
+  border-radius: 20px;
+  margin: 10px auto;
+}
+
+main {
+  border: 5px solid white;
+  border-radius: 20px;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+footer {
+  border: 5px solid white;
+  border-radius: 20px;
+  margin: 10px auto;
 }
 
 a {
