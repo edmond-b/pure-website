@@ -1,15 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0 10px;
-  padding: 0;
   background-color: white;
   text-align: center;
   font-family: sans-serif;
-  min-width: 900px
+  min-width: 900px;
 }
 
 header {
   margin-top: 10px;
-  padding: 20px;
+  padding: 30px;
   height: 100px;
   background-color: black;
   color: white;
@@ -18,19 +23,20 @@ header {
 main {
   border: 5px solid black;
   border-radius: 3px;
-  margin: 250px auto;
+  margin: 300px auto;
   width: 60%;
-  padding: 10px;
+  padding: 20px;
 }
 
 hr {
   border: 1px solid;
+  margin: 20px auto;
   width: 500px;
 }
 
 footer {
   margin-bottom: 10px;
-  padding: 20px;
+  padding: 30px;
   height: 100px;
   background-color: black;
   color: white;
