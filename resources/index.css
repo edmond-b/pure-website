@@ -7,6 +7,7 @@ body {
 }
 
 header {
+  margin-top: 10px;
   padding: 25px;
   height: 100px;
   background-color: black;
@@ -16,7 +17,7 @@ header {
 main {
   border: 5px solid black;
   border-radius: 0px;
-  margin: 255px auto;
+  margin: 240px auto;
   padding: 10px;
   min-width: 900px
 }
