@@ -5,11 +5,11 @@
 }
 
 body {
-  margin: 0 10px;
+  margin: auto 10px;
   background-color: white;
   text-align: center;
   font-family: sans-serif;
-  min-width: 900px;
+  min-width: 500px;
 }
 
 header {
@@ -31,7 +31,7 @@ main {
 hr {
   border: 1px solid;
   margin: 20px auto;
-  width: 500px;
+  width: 60%;
 }
 
 footer {
