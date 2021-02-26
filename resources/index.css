@@ -4,11 +4,12 @@ body {
   background-color: white;
   text-align: center;
   font-family: sans-serif;
+  min-width: 950px
 }
 
 header {
   margin-top: 10px;
-  padding: 25px;
+  padding: 20px;
   height: 100px;
   background-color: black;
   color: white;
@@ -16,25 +17,29 @@ header {
 
 main {
   border: 5px solid black;
-  border-radius: 0px;
-  margin: 240px auto;
+  border-radius: 3px;
+  margin: 250px auto;
+  width: 950px;
   padding: 10px;
-  min-width: 900px
 }
 
 hr {
   border: 1px solid;
-  margin: 0 500px;
+  width: 500px;
 }
 
 footer {
+  margin-bottom: 10px;
+  padding: 20px;
   height: 100px;
   background-color: black;
   color: white;
-  margin: 10px auto;
-  padding: 25px;
 }
 
 a {
   text-decoration: none;
+}
+
+h1 {
+  color: #C4C4C4;
 }
