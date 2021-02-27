@@ -5,27 +5,25 @@
 }
 
 body {
-  object-fit: contain;
-  margin: 0 10px;
+  margin: 10px;
   background-color: white;
   text-align: center;
   font-family: sans-serif;
-  height: 100%
+  min-width: 780px;
 }
 
 header {
-  margin-top: 10px;
   padding: 30px;
-  height: 20%;
   background-color: black;
   color: white;
 }
 
 main {
-  margin: 195px auto;
+  clear: both;
+  margin: 0px auto;
+  width: 60%;
   border: 5px solid black;
   border-radius: 3px;
-  width: 60%;
   padding: 20px;
 }
 
@@ -36,9 +34,8 @@ hr {
 }
 
 footer {
-  margin-bottom: 10px;
+  clear: both;
   padding: 30px;
-  height: 20%;
   background-color: black;
   color: white;
 }
@@ -62,4 +59,40 @@ a:hover {
 
 h1 {
   color: #C4C4C4;
+}
+
+div {
+  margin: 10px 0;
+}
+
+.top-right {
+  display: inline;
+  width: 50px;
+  height:50px;
+  border-style: solid solid none none;
+  float: right;
+}
+
+.top-left {
+  float: left;
+  display: inline;
+  width: 50px;
+  height:50px;
+  border-style: solid none none solid;
+}
+
+.bottom-right {
+  display: inline;
+  width: 50px;
+  height:50px;
+  border-style: none solid solid none;
+  float: right;
+}
+
+.bottom-left {
+  float: left;
+  display: inline;
+  width: 50px;
+  height:50px;
+  border-style: none none solid solid;
 }
