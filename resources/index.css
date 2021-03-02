@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  width: 100%;
+}
 
 body {
   margin: 10px;
@@ -20,7 +23,7 @@ header {
 
 main {
   clear: both;
-  margin: 150px auto 100px;
+  margin: 0 auto;
   width: 60%;
   border: 5px solid black;
   border-radius: 3px;
@@ -28,6 +31,7 @@ main {
 }
 
 hr {
+  background-color: black;
   border: 1px solid;
   margin: 20px auto;
   width: 60%;
@@ -41,11 +45,10 @@ footer {
 }
 
 .bottom {
-  width: 100%;
+  width: 98%;
   position: absolute;
   bottom: 0;
-  padding: 30px;
-  background-color: black;
+  margin-bottom: 10px;
 }
 
 a {
@@ -75,7 +78,6 @@ div {
 }
 
 .top-right {
-  display: inline;
   width: 50px;
   height: 50px;
   border-style: solid solid none none;
@@ -84,14 +86,12 @@ div {
 
 .top-left {
   float: left;
-  display: inline;
   width: 50px;
   height: 50px;
   border-style: solid none none solid;
 }
 
 .bottom-right {
-  display: inline;
   width: 50px;
   height: 50px;
   border-style: none solid solid none;
@@ -100,7 +100,6 @@ div {
 
 .bottom-left {
   float: left;
-  display: inline;
   width: 50px;
   height: 50px;
   border-style: none none solid solid;
