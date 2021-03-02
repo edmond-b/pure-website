@@ -40,6 +40,14 @@ footer {
   color: white;
 }
 
+.bottom {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 30px;
+  background-color: black;
+}
+
 a {
   color: red;
   border-style: solid;
