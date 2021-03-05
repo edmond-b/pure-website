@@ -16,6 +16,8 @@ body {
   grid-template: max-content repeat(4, 1fr) max-content / repeat(4, 1fr);
 }
 
+/* Header and Nav Bar */
+
 header {
   padding: 20px;
   background-color: black;
@@ -50,6 +52,8 @@ a {
   color: black;
   text-decoration: none;
 }
+
+/* Main Content */
 
 main {
   grid-area: 4 / 2 / 4 / 4;
@@ -99,6 +103,8 @@ h1 {
   color: #C4C4C4;
 }
 
+/* Corner frame */
+
 .top-right {
   grid-area: 2 / 4;
   justify-self: end;
@@ -144,25 +150,49 @@ h1 {
 /* Logo */
 
 .logo {
-  display: flex;
   justify-self: end;
   align-self: center;
   grid-area: 3 / 2;
   margin-right: 10px;
+  display: flex;
 }
 
 .e {
-  height: 80px;
-  width: 60px;
+  height: 90px;
   color: white;
   background-color: black;
   font-size: 5em;
+  clip-path: polygon(0 10%, 0 90%, 80% 90%, 60% 10%);
+  position: relative;
+  left: 35px;
+  transition: transform 0.2s;
+  transform: translateZ(0);
 }
 
 .b {
-  height: 80px;
-  width: 60px;
+  height: 90px;
   color: white;
   background-color: red;
   font-size: 5em;
+  clip-path: polygon(30% 10%, 50% 90%, 100% 90%, 100% 10%);
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.e:hover {
+  transform: scale(1.2);
+}
+
+.e:hover + .b {
+  transform: scale(1.1);
+}
+
+.b:hover {
+  transform: scale(1.2);
+}
+
+p {
+  color: #C4C4C4;
+  position: relative;
+  top: 33px;
 }
