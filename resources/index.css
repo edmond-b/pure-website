@@ -197,7 +197,8 @@ p {
   font-size: 1.5em;
   color: #C4C4C4;
   position: relative;
-  top: 33px;
+  top: 32px;
+  min-width: 115px;
 }
 
 @media only screen and (max-width 768px) {
