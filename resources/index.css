@@ -13,7 +13,7 @@ html, body {
 
 body {
   display: grid;
-  grid-template: max-content repeat(4, 1fr) max-content / repeat(4, 1fr);
+  grid-template: max-content 1fr max-content max-content 1fr max-content / repeat(4, 1fr);
 }
 
 /* Header and Nav Bar */
@@ -28,6 +28,7 @@ header {
 nav {
   display: flex;
   grid-area: 3 / 3;
+  height:
 }
 
 ul{
@@ -192,6 +193,8 @@ h1 {
 }
 
 p {
+  font-family: "Brush Script MT";
+  font-size: 1.5em;
   color: #C4C4C4;
   position: relative;
   top: 33px;
