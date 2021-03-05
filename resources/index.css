@@ -156,6 +156,7 @@ h1 {
   grid-area: 3 / 2;
   margin-right: 20px;
   display: flex;
+  min-width: 120px;
 }
 
 .e {
