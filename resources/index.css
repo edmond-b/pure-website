@@ -184,12 +184,12 @@ h1 {
   transform: scale(1.2);
 }
 
-.e:hover + .b {
-  transform: scale(1.1);
-}
-
 .b:hover {
   transform: scale(1.2);
+}
+
+.e:hover + .b {
+  transform: scale(1.1);
 }
 
 p {
@@ -202,6 +202,7 @@ p {
 
 @media only screen and (max-width 768px) {
   .e {
+    position: relative;
     left: 5px;
   }
 }
