@@ -189,10 +189,6 @@ h1 {
   transform: scale(1.2);
 }
 
-.e:hover + .b {
-  transform: scale(1.1);
-}
-
 p {
   font-family: "Brush Script MT", "Brush Script Std", cursive;
   font-size: 1.5em;
