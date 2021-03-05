@@ -166,7 +166,7 @@ h1 {
   font-size: 5em;
   clip-path: polygon(0 10%, 0 90%, 80% 90%, 60% 10%);
   position: relative;
-  left: 35px;
+  left: 33px;
   transition: transform 0.2s;
   transform: translateZ(0);
 }
@@ -200,11 +200,4 @@ p {
   position: relative;
   top: 32px;
   min-width: 115px;
-}
-
-@media only screen and (max-width 768px) {
-  .e {
-    position: relative;
-    left: 5px;
-  }
 }
