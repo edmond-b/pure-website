@@ -3,41 +3,33 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-  text-align: center;
 }
 
 html, body {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
 }
 
 body {
   display: grid;
-  grid-template: max-content 1fr max-content max-content 1fr max-content / repeat(4, 1fr);
+  grid-template: 1fr max-content 1fr / repeat(4, 1fr);
 }
 
-/* Header and Nav Bar */
-
-header {
-  padding: 20px;
-  background-color: black;
-  grid-area: 1 / 1 / 1 / 5;
-  align-self: start;
-}
+/* Nav Bar */
 
 nav {
-  display: flex;
-  grid-area: 3 / 3;
+  grid-area: 2 / 3;
 }
 
 ul{
+  font-size: 2em;
+  font-weight: 700;
   border-left: 5px solid;
   list-style-type: none;
   padding-left: 10px;
 }
 
 li {
-  margin: auto 0;
   padding: 10px;
   transition: transform 0.2s;
 }
@@ -54,43 +46,9 @@ a {
   text-decoration: none;
 }
 
-/* Main Content */
-
-main {
-  grid-area: 4 / 2 / 4 / 4;
-  margin: 10px 0 0;
-  width: 100%;
-  border: 5px solid;
-  border-radius: 3px;
-  padding: 20px;
-}
-
-hr {
-  background-color: black;
-  border: 1px solid;
-  margin: 10px auto 20px;
-  width: 60%;
-}
-
-footer {
-  grid-area: 6 / 1 / 6 / 5;
-  padding: 20px;
-  background-color: black;
-}
-
-h1 {
-  color: #C4C4C4
-}
+/* GitHub */
 
 .github {
-  color: red;
-  border-style: solid;
-  border-radius: 10px;
-  padding: 10px;
-  text-decoration: none;
-}
-
-.github:visited {
   color: red;
 }
 
@@ -100,14 +58,10 @@ h1 {
   color: white;
 }
 
-.title {
-  color: #C4C4C4;
-}
-
 /* Corner frame */
 
 .top-right {
-  grid-area: 2 / 4;
+  grid-area: 1 / 4;
   justify-self: end;
   margin: 0;
   width: 100px;
@@ -118,7 +72,7 @@ h1 {
 }
 
 .top-left {
-  grid-area: 2 / 1;
+  grid-area: 1 / 1;
   margin: 0;
   width: 100px;
   height: 100px;
@@ -128,7 +82,7 @@ h1 {
 }
 
 .bottom-right {
-  grid-area: 5 / 4;
+  grid-area: 3 / 4;
   align-self: end;
   justify-self: end;
   width: 100px;
@@ -139,7 +93,7 @@ h1 {
 }
 
 .bottom-left {
-  grid-area: 5 / 1;
+  grid-area: 3 / 1;
   align-self: end;
   width: 100px;
   height: 100px;
@@ -153,29 +107,29 @@ h1 {
 .logo {
   justify-self: end;
   align-self: center;
-  grid-area: 3 / 2;
+  grid-area: 2 / 2;
   margin-right: 20px;
   display: flex;
   min-width: 120px;
 }
 
 .e {
-  height: 90px;
+  height: 150px;
   color: white;
   background-color: black;
-  font-size: 5em;
+  font-size: 8.4em;
   clip-path: polygon(0 10%, 0 90%, 80% 90%, 60% 10%);
   position: relative;
-  left: 33px;
+  left: 55px;
   transition: transform 0.2s;
   transform: translateZ(0);
 }
 
 .b {
-  height: 90px;
+  height: 150px;
   color: white;
   background-color: red;
-  font-size: 5em;
+  font-size: 8.4em;
   clip-path: polygon(30% 10%, 50% 90%, 100% 90%, 100% 10%);
   position: relative;
   transition: transform 0.2s;
@@ -194,6 +148,7 @@ p {
   font-size: 1.5em;
   color: #C4C4C4;
   position: relative;
-  top: 32px;
+  left: 50px;
+  top: 70px;
   min-width: 115px;
 }
