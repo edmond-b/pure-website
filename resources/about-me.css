@@ -5,25 +5,47 @@
   font-family: sans-serif;
 }
 
-html, body {
+html, body, .about-me {
   height: 100%;
   width: 100%;
 }
 
-body {
+.about-me {
   display: grid;
-  grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+  grid-template-columns: 250px 1fr 250px;
 }
 
 /* Main Content */
 
+.main {
+  height: 100%;
+  display: grid;
+  line-height: 1.5em;
+}
+
+.tech {
+  padding: 20px;
+  background-color: #C4C4C4;
+}
+
+.before-tech {
+  padding: 20px;
+  background-color: #AAAAAA;
+}
+
+.title {
+  margin-bottom: 20px;
+  text-align: center;
+  align-self: end;
+}
+
+/* Home Button */
+
 .home {
-  width: 300px;
+  width: 250px;
   padding: 20px;
   text-align: center;
-  grid-area: 2 / 2;
   align-self: center;
-  justify-self: end;
   text-decoration: none;
   color: black;
   font-size: 2em;
@@ -34,92 +56,26 @@ body {
 
 .home:hover {
   color: white;
-  box-shadow: inset -300px 0 0 0 black;
+  box-shadow: inset 250px 0 1px 0 black;
 }
 
-.main {
-  grid-area: 2 / 3;
-  border-left: 5px solid;
-  align-self: center;
-  background-color: #C4C4C4;
-  line-height: 1.5em;
+/* Projects Button */
+
+.projects {
+  width: 250px;
   padding: 20px;
-}
-
-.title {
-  margin-bottom: 20px;
-}
-
-/* Corner Frame */
-
-.top-right, .top-left, .bottom-right, .bottom-left {
-  margin: 10px;
-  width: 100px;
-  height: 100px;
-  border-width: thick;
-}
-
-.top-left {
-  grid-area: 1 / 1;
-  border-style: solid none none solid;
-}
-
-.top-right {
-  grid-area: 1 / 4;
-  border-style: solid solid none none;
+  text-align: center;
+  align-self: center;
   justify-self: end;
+  text-decoration: none;
+  color: black;
+  font-size: 2em;
+  font-weight: 700;
+  box-shadow: inset 0 0 0 0 black;
+  transition: box-shadow 0.5s, color 0.5s;
 }
 
-.bottom-left {
-  grid-area: 3 / 1;
-  border-style: none none solid solid;
-  align-self: end;
-}
-
-.bottom-right {
-  grid-area: 3 / 4;
-  border-style: none solid solid none;
-  align-self: end;
-  justify-self: end;
-}
-
-/* Logo */
-
-.logo {
-  justify-self: end;
-  grid-area: 1 / 2;
-  margin-right: 20px;
-  display: flex;
-  min-width: 120px;
-}
-
-.e {
-  height: 150px;
+.projects:hover {
   color: white;
-  background-color: black;
-  font-size: 8.4em;
-  clip-path: polygon(0 10%, 0 90%, 80% 90%, 60% 10%);
-  position: relative;
-  left: 135px;
-  transition: transform 0.2s;
-  transform: translateZ(0);
-}
-
-.b {
-  height: 150px;
-  color: white;
-  background-color: red;
-  font-size: 8.4em;
-  clip-path: polygon(30% 10%, 50% 90%, 100% 90%, 100% 10%);
-  position: relative;
-  left: 80px;
-  transition: transform 0.2s;
-}
-
-.e:hover {
-  transform: scale(1.2);
-}
-
-.b:hover {
-  transform: scale(1.2);
+  box-shadow: inset -250px 0 0 0 black;
 }
