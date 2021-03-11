@@ -12,130 +12,61 @@ html, body {
 
 body {
   display: grid;
-  grid-template: 1fr max-content 1fr / repeat(4, 1fr);
-}
-
-/* Nav Bar */
-
-nav {
-  grid-area: 2 / 3;
-}
-
-ul{
-  font-size: 2em;
-  font-weight: 700;
-  border-left: 5px solid;
-  list-style-type: none;
-}
-
-li {
-  padding: 20px;
-  box-shadow: inset 0 0 0 0 black;
-  transition: all 0.5s;
-}
-
-li:hover {
-  color: white;
-  box-shadow: inset 300px 0 0 0 black;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
-
-/* GitHub */
-
-.github {
-  box-shadow: inset 0 0 0 0 red;
-  color: red;
-}
-
-.github:hover {
-  box-shadow: inset 300px 0 0 0 red;
-  color: white;
-}
-
-/* Corner frame */
-
-.top-right, .top-left, .bottom-right, .bottom-left {
-  margin: 10px;
-  width: 100px;
-  height: 100px;
-  border-width: thick;
-}
-
-.top-right {
-  grid-area: 1 / 4;
-  justify-self: end;
-  border-style: solid solid none none;
-}
-
-.top-left {
-  grid-area: 1 / 1;
-  border-style: solid none none solid;
-}
-
-.bottom-right {
-  grid-area: 3 / 4;
-  align-self: end;
-  justify-self: end;
-  border-style: none solid solid none;
-}
-
-.bottom-left {
-  grid-area: 3 / 1;
-  align-self: end;
-  border-style: none none solid solid;
+  grid-template: max-content 1fr / max-content 1fr;
 }
 
 /* Logo */
 
 .logo {
-  justify-self: end;
+  height: 225px;
+  width: 250px;
+  background-color: #101010;
+}
+
+/* Nav Bar */
+
+.nav {
+  width: 250px;
+  grid-area: 2 / 1;
+  font-size: 2em;
+  text-align: right;
+  background-color: #101010;
+}
+
+li {
+  padding: 20px 0;
+  color: white;
+  box-shadow: inset 0 0 0 0 #EEEEEE;
+  transition: all 0.5s;
+}
+
+li:hover {
+  box-shadow: inset -250px 0 0 0 #EEEEEE;
+  color: black;
+}
+
+.github {
+  background-color: #950000;
+}
+
+/* Link Style */
+
+a {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  padding-right: 20px
+}
+
+/* Landing */
+
+.landing {
+  grid-area: 1 / 2 / 3 / 2;
+  background-color: #EEEEEE;
+  display: grid;
+}
+
+.title {
+  justify-self: center;
   align-self: center;
-  grid-area: 2 / 2;
-  margin-right: 20px;
-  display: flex;
-  min-width: 120px;
-}
-
-.e {
-  height: 150px;
-  color: white;
-  background-color: black;
-  font-size: 8.4em;
-  clip-path: polygon(0 10%, 0 90%, 80% 90%, 60% 10%);
-  position: relative;
-  left: 55px;
-  transition: transform 0.2s;
-  transform: translateZ(0);
-}
-
-.b {
-  height: 150px;
-  color: white;
-  background-color: red;
-  font-size: 8.4em;
-  clip-path: polygon(30% 10%, 50% 90%, 100% 90%, 100% 10%);
-  position: relative;
-  transition: transform 0.2s;
-}
-
-.e:hover {
-  transform: scale(1.2);
-}
-
-.b:hover {
-  transform: scale(1.2);
-}
-
-p {
-  font-family: "Brush Script MT", "Brush Script Std", cursive;
-  font-size: 1.5em;
-  color: #C4C4C4;
-  position: relative;
-  left: 50px;
-  top: 70px;
-  min-width: 115px;
 }

@@ -5,19 +5,63 @@
   font-family: sans-serif;
 }
 
-html, body, .about-me {
+html, body {
   height: 100%;
   width: 100%;
 }
 
-.about-me {
+body {
   display: grid;
-  grid-template-columns: 250px 1fr 250px;
+  grid-template: max-content 1fr / max-content 1fr;
+}
+
+/* Logo */
+
+.logo {
+  height: 225px;
+  width: 250px;
+  background-color: #101010;
+}
+
+/* Nav Bar */
+
+.nav {
+  width: 250px;
+  grid-area: 2 / 1;
+  font-size: 2em;
+  text-align: right;
+  background-color: #101010;
+}
+
+li {
+  padding: 20px 0;
+  color: white;
+  box-shadow: inset 0 0 0 0 #EEEEEE;
+  transition: all 0.5s;
+}
+
+li:hover {
+  box-shadow: inset -250px 0 0 0 #EEEEEE;
+  color: black;
+}
+
+.github {
+  background-color: #950000;
+}
+
+/* Link Style */
+
+a {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  padding-right: 20px
 }
 
 /* Main Content */
 
 .main {
+  grid-area: 1 / 2 / 3 / 2;
   height: 100%;
   display: grid;
   line-height: 1.5em;
@@ -37,45 +81,4 @@ html, body, .about-me {
   margin-bottom: 20px;
   text-align: center;
   align-self: end;
-}
-
-/* Home Button */
-
-.home {
-  width: 250px;
-  padding: 20px;
-  text-align: center;
-  align-self: center;
-  text-decoration: none;
-  color: black;
-  font-size: 2em;
-  font-weight: 700;
-  box-shadow: inset 0 0 0 0 black;
-  transition: box-shadow 0.5s, color 0.5s;
-}
-
-.home:hover {
-  color: white;
-  box-shadow: inset 250px 0 1px 0 black;
-}
-
-/* Projects Button */
-
-.projects {
-  width: 250px;
-  padding: 20px;
-  text-align: center;
-  align-self: center;
-  justify-self: end;
-  text-decoration: none;
-  color: black;
-  font-size: 2em;
-  font-weight: 700;
-  box-shadow: inset 0 0 0 0 black;
-  transition: box-shadow 0.5s, color 0.5s;
-}
-
-.projects:hover {
-  color: white;
-  box-shadow: inset -250px 0 0 0 black;
 }

@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-  text-align: center;
 }
 
 html, body {
@@ -11,57 +10,60 @@ html, body {
   width: 100%;
 }
 
+body {
+  display: grid;
+  grid-template: max-content 1fr / max-content 1fr;
+}
+
+/* Logo */
+
+.logo {
+  height: 225px;
+  width: 250px;
+  background-color: #101010;
+}
+
+/* Nav Bar */
+
+.nav {
+  width: 250px;
+  grid-area: 2 / 1;
+  font-size: 2em;
+  text-align: right;
+  background-color: #101010;
+}
+
+li {
+  padding: 20px 0;
+  color: white;
+  box-shadow: inset 0 0 0 0 #EEEEEE;
+  transition: all 0.5s;
+}
+
+li:hover {
+  box-shadow: inset -250px 0 0 0 #EEEEEE;
+  color: black;
+}
+
+.github {
+  background-color: #950000;
+}
+
+/* Link Style */
+
+a {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  padding-right: 20px
+}
+
+/* Main Content */
+
 .main {
-  height: 100%;
+  grid-area: 1 / 2 / 3 / 2;
   display: grid;
   background-color: #C4C4C4;
   align-content: center;
   justify-content: center;
-}
-
-/* Games Button */
-
-.games {
-  background-color: white;
-  position: absolute;
-  top: 46%;
-  left: 0;
-  width: 250px;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  color: black;
-  font-size: 2em;
-  font-weight: 700;
-  box-shadow: inset 0 0 0 0 black;
-  transition: box-shadow 0.5s, color 0.5s;
-  z-index: 4;
-}
-
-.games:hover {
-  color: white;
-  box-shadow: inset 250px 0 1px 0 black;
-}
-
-/* Contact Me Button */
-
-.contact-me {
-  background-color: white;
-  position: absolute;
-  bottom: 46%;
-  right: 0;
-  width: 250px;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  color: black;
-  font-size: 2em;
-  font-weight: 700;
-  box-shadow: inset 0 0 0 0 black;
-  transition: box-shadow 0.5s, color 0.5s;
-}
-
-.contact-me:hover {
-  color: white;
-  box-shadow: inset -250px 0 1px 0 black;
 }

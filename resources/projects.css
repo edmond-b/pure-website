@@ -5,60 +5,68 @@
   font-family: sans-serif;
 }
 
-html, body, .projects {
+html, body{
   height: 100%;
   width: 100%;
 }
 
-.projects {
+body {
   display: grid;
-  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  grid-template: max-content 1fr / max-content 1fr;
 }
 
-/* About Me Button */
+/* Logo */
 
-.about-me {
+.logo {
+  height: 225px;
   width: 250px;
-  background-color: white;
-  position: absolute;
-  top: 46%;
-  z-index: 11;
-  text-decoration: none;
-  color: black;
-  box-shadow: inset 0 0 0 0 black;
-  transition: all 0.5s;
-  padding: 20px;
-  text-align: center;
+  background-color: #101010;
 }
 
-.about-me:hover {
-  color: white;
-  box-shadow: inset 250px 0 1px 0 black;
-}
+/* Nav Bar */
 
-/* Games Button */
-
-.games {
+.nav {
   width: 250px;
-  background-color: white;
-  position: absolute;
-  top: 46%;
-  right: 0;
-  z-index: 11;
-  text-decoration: none;
-  color: black;
-  box-shadow: inset 0 0 0 0 black;
-  transition: all 0.5s;
-  padding: 20px;
-  text-align: center;
+  grid-area: 2 / 1;
+  font-size: 2em;
+  text-align: right;
+  background-color: #101010;
 }
 
-.games:hover {
+li {
+  padding: 20px 0;
   color: white;
-  box-shadow: inset -250px 0 1px 0 black;
+  box-shadow: inset 0 0 0 0 #EEEEEE;
+  transition: all 0.5s;
+}
+
+li:hover {
+  box-shadow: inset -250px 0 0 0 #EEEEEE;
+  color: black;
+}
+
+.github {
+  background-color: #950000;
+}
+
+/* Link Style */
+
+a {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  padding-right: 20px
 }
 
  /* Main Content */
+
+ .projects {
+   grid-area: 1 / 2 / 3 / 2;
+   display: grid;
+   grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+ }
+
+ /* Project 1 */
 
 .project-1 {
   width: 100%;
