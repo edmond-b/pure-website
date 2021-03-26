@@ -85,11 +85,12 @@ li a {
 .project-1 {
   width: 100%;
   height: 100%;
-  background-color: #C4C4C4;
+  background-image: url('./images/bookmark-manager.png');
+  filter: grayscale(100%);
+  background-size: 100% 100%;
   display: grid;
   align-items: center;
   transition: all 0.5s;
-  color: white;
   text-align: center;
 }
 
@@ -97,6 +98,7 @@ li a {
   width: 130%;
   height: 130%;
   z-index: 10;
+  filter: grayscale(0%);
 }
 
 .project-1-text {
@@ -106,7 +108,7 @@ li a {
 
 .project-1:hover > .project-1-text {
   display: block;
-  align-self: start;
+  align-self: end;
 }
 
 .project-1:hover > .project-1-title {
@@ -120,7 +122,9 @@ li a {
   height: 100%;
   justify-self: end;
   width: 100%;
-  background-color: #AAAAAA;
+  background-image: url('./images/acebook.png');
+  filter: grayscale(100%);
+  background-size: 100% 100%;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -132,6 +136,7 @@ li a {
   width: 130%;
   height: 130%;
   z-index: 10;
+  filter: grayscale(0%);
 }
 
 .project-2-text {
@@ -155,7 +160,9 @@ li a {
   height: 100%;
   align-self: end;
   height: 100%;
-  background-color: #929292;
+  background-image: url('./images/run-boris-run.png');
+  filter: grayscale(100%);
+  background-size: 100% 100%;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -167,6 +174,7 @@ li a {
   width: 130%;
   height: 130%;
   z-index: 10;
+  filter: grayscale(0%);
 }
 
 .project-3-text {

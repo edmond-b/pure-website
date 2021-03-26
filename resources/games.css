@@ -100,6 +100,7 @@ li a {
 
 .javascript:hover {
   width: 140%;
+  z-index: 10;
 }
 
 .javascript:hover .javascript-text {
@@ -111,7 +112,9 @@ li a {
 .unity {
   text-align: center;
   padding: 20px;
-  background-color: #AAAAAA;
+  background-image: url('./images/unity.png');
+  background-size: 100% 100%;
+  filter: grayscale(100%);
   width: 100%;
   transition: width 0.5s ease-in;
 }
@@ -126,6 +129,7 @@ li a {
 .unity:hover {
   width: 140%;
   z-index: 3;
+  filter: grayscale(0%);
 }
 
 .unity:hover .unity-text {
