@@ -2,6 +2,6 @@
 
 # New portfolio website
 
-## [Visit Site HERE](www.edmondbullaj.com)
+## [Visit Site HERE](https://www.edmondbullaj.com/)
 
 ### This is a portfolio that is focused on a simple and reactive front-end. Made entirely with HTML, CSS and a touch of JavaScript, its light weight with no unnecessary add-ons.
