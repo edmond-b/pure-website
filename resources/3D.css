@@ -77,20 +77,39 @@ li a {
 .main {
   grid-column: 2;
   display: grid;
-  grid-template: 1fr 1fr / 1fr 1fr;
+  grid-template: max-content 1fr / 1fr 1fr 1fr;
+  background-color: #EEEEEE; 
 }
 
+/* Images */
+
 .quark {
-  grid-area: 1 / 1;
-  width: 50%;
+  width: 100%;
+  filter: grayscale(100%);
+  transition: all 0.5s;
 }
 
 .doughnut {
-  grid-area: 1 / 2;
-  width: 50%;
+  width: 100%;
+  transition: all 0.5s;
+  filter: grayscale(100%);
 }
 
 .chair {
-  grid-area: 2 / 2;
-  width: 50%;
+  width: 100%;
+  filter: grayscale(100%);
+  transition: all 0.5s;
+}
+
+.quark:hover, .doughnut:hover, .chair:hover {
+  filter: grayscale(0%);
+}
+
+/* Text */
+
+.text {
+  padding: 20px;
+  grid-column: 1 / 4;
+  font-size: 1.5em;
+  line-height: 1.5em;
 }

@@ -86,24 +86,32 @@ li a {
 
 .tech {
   display: grid;
-  grid-template: max-content 1fr / 1fr 1fr;
+  grid-template: 75px 1fr / 1fr 1fr;
   padding: 20px;
   background-color: #C4C4C4;
+  align-items: center;
 }
 
 .title {
-  margin-bottom: 20px;
+  font-size: 4em;
 }
 
 .tech-text {
   grid-row: 2;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  color: #202020;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .technologies {
   text-align: center;
+  font-size: 4em;
 }
 
 .tech-icons {
+  padding: 10px;
   font-weight: bold;
   height: 100%;
   width:100%;
@@ -146,6 +154,11 @@ li a {
 
 .more {
   width: auto;
+  transition: 0.1s;
+}
+
+.more:hover {
+  transform: scale(1.2);
 }
 
 /* About General */
@@ -155,13 +168,19 @@ li a {
   padding: 20px;
   background-color: #AAAAAA;
   display: grid;
+  align-items: center;
 }
 
 .title-2 {
-  margin-bottom: 20px;
+  font-size: 4em;
 }
 
 .before-text {
   width: 50%;
   justify-self: end;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  color: #202020;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
 }

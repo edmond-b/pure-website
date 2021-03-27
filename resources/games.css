@@ -84,11 +84,19 @@ li a {
 
 .javascript {
   text-align: center;
-  padding: 20px;
-  background-color: #C4C4C4;
+  background-image: url('./images/run-boris-run.png');
+  background-size: 100% 100%;
+  filter: grayscale(100%);
   width: 100%;
   justify-self: end;
-  transition: width 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  display: grid;
+}
+
+.title-javascript {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  align-self: center;
 }
 
 .javascript-text {
@@ -96,11 +104,13 @@ li a {
   line-height: 1.5em;
   opacity: 0;
   transition: opacity 0.5s;
+  display: none;
 }
 
 .javascript:hover {
   width: 140%;
   z-index: 10;
+  filter: grayscale(0%);
 }
 
 .javascript:hover .javascript-text {
@@ -111,12 +121,17 @@ li a {
 
 .unity {
   text-align: center;
-  padding: 20px;
   background-image: url('./images/unity.png');
   background-size: 100% 100%;
   filter: grayscale(100%);
   width: 100%;
-  transition: width 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  display: grid;
+}
+
+.title-unity {
+  background-color: rgba(255, 255, 255, 0.7);
+  align-self: center;
 }
 
 .unity-text {
@@ -124,6 +139,7 @@ li a {
   line-height: 1.5em;
   transition: opacity 0.5s;
   opacity: 0;
+  display: none;
 }
 
 .unity:hover {
