@@ -121,12 +121,7 @@ li a {
   font-size: 1.5vw;
   color: #202020;
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
-.technologies {
-  text-align: center;
-  font-size: 3vw;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .tech-icons {
@@ -155,9 +150,11 @@ li a {
 
 .fa-react { color: #00D1FF; }
 
-.fa-database { color: #016898; }
-
 .fa-git-alt { color: #EE5300; }
+
+.fa-gem {
+  padding-top: 5px;
+}
 
 .blender {
   height: 65px;
@@ -166,6 +163,11 @@ li a {
 
 .sinatra {
   height: 65px;
+  width: 80px;
+}
+
+.postgresql {
+  height: 80px;
   width: 80px;
 }
 
@@ -178,7 +180,7 @@ li a {
   transform: scale(1.2);
 }
 
-/* About General */
+/* Before text */
 
 .before-tech {
   padding: 20px;
@@ -188,10 +190,21 @@ li a {
   align-items: center;
 }
 
-.hobbies-title {
-  text-align: center;
+.before-title {
   font-size: 3vw;
+  grid-area: 1 / 2;
+  text-align: right;
 }
+
+.before-text {
+  justify-self: end;
+  font-size: 1.5vw;
+  color: #202020;
+  padding: 10px;
+  grid-column: 2;
+  background-color: rgba(255, 255, 255, 0);
+}
+
 
 /* Hobbies icons */
 
@@ -199,6 +212,7 @@ li a {
   padding: 10px;
   font-weight: bold;
   display: grid;
+  grid-row: 2;
   align-items: start;
   justify-items: center;
   grid-template: max-content 1fr max-content 1fr / repeat(3, 1fr);
@@ -219,16 +233,12 @@ li a {
   width: 100px;
 }
 
-.before-title {
-  font-size: 3vw;
-  grid-area: 1 / 2;
-  text-align: right;
+.pencil {
+  height: 80px;
+  width: 80px;
+  padding-top: 5px;
 }
 
-.before-text {
-  justify-self: end;
-  font-size: 1.5vw;
-  color: #202020;
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0.7);
+.fa-chess {
+  color: #623700;
 }
