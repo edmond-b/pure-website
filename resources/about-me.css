@@ -11,7 +11,7 @@ html, body {
 
 body {
   display: grid;
-  grid-template-columns: max-content 1fr;
+  grid-template-columns: 175px 1fr;
 }
 
 /* Logo */
@@ -32,6 +32,8 @@ body {
   text-align: center;
   background-color: #101010;
   display: grid;
+  position: fixed;
+  height: 100%;
 }
 
 .links {
@@ -72,6 +74,24 @@ li a {
   display: block;
 }
 
+/* Scroll Bar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 /* Main Content */
 
 .main {
@@ -79,27 +99,26 @@ li a {
   height: 100%;
   display: grid;
   grid-template-rows: 1fr 1fr;
-  line-height: 1.5em;
+  line-height: 1.5;
 }
 
 /* About Tech */
 
 .tech {
   display: grid;
-  grid-template: 75px 1fr / 1fr 1fr;
+  grid-template: max-content 1fr / 1fr 1fr;
   padding: 20px;
   background-color: #C4C4C4;
   align-items: center;
 }
 
 .title {
-  font-size: 4em;
+  font-size: 3vw;
 }
 
 .tech-text {
   grid-row: 2;
-  font-size: 1.5em;
-  line-height: 1.5em;
+  font-size: 1.5vw;
   color: #202020;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.7);
@@ -107,7 +126,7 @@ li a {
 
 .technologies {
   text-align: center;
-  font-size: 4em;
+  font-size: 3vw;
 }
 
 .tech-icons {
@@ -162,22 +181,53 @@ li a {
 /* About General */
 
 .before-tech {
-  text-align: right;
   padding: 20px;
   background-color: #AAAAAA;
   display: grid;
+  grid-template: max-content 1fr / 1fr 1fr;
   align-items: center;
 }
 
-.title-2 {
-  font-size: 4em;
+.hobbies-title {
+  text-align: center;
+  font-size: 3vw;
+}
+
+/* Hobbies icons */
+
+.hobbies-icons {
+  padding: 10px;
+  font-weight: bold;
+  display: grid;
+  align-items: start;
+  justify-items: center;
+  grid-template: max-content 1fr max-content 1fr / repeat(3, 1fr);
+}
+
+.muay-thai {
+  height: 140px;
+  width: 100px;
+}
+
+.boxing {
+  height: 100px;
+  width: 130px;
+}
+
+.golf {
+  height: 100px;
+  width: 100px;
+}
+
+.before-title {
+  font-size: 3vw;
+  grid-area: 1 / 2;
+  text-align: right;
 }
 
 .before-text {
-  width: 50%;
   justify-self: end;
-  font-size: 1.5em;
-  line-height: 1.5em;
+  font-size: 1.5vw;
   color: #202020;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.7);
