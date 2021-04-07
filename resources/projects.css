@@ -39,7 +39,6 @@ body {
 }
 
 li {
-  padding: 10px 0;
   color: white;
   box-shadow: inset 0 0 0 0 #EEEEEE;
   transition: box-shadow 0.5s, color 0.5s;
@@ -65,7 +64,7 @@ li:hover {
 a {
   text-decoration: none;
   color: inherit;
-  width: 100%;
+  padding: 10px 0;
 }
 
 li a {
@@ -194,8 +193,6 @@ li a {
 /* Project 4 */
 
 .project-4 {
-  width: 100%;
-  height: 100%;
   align-self: end;
   justify-self: end;
   height: 100%;
@@ -207,6 +204,19 @@ li a {
   transition: all 0.5s;
   color: white;
   text-align: center;
+  position: relative;
+}
+
+.info-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
 }
 
 .project-4:hover {
@@ -215,16 +225,6 @@ li a {
   z-index: 10;
 }
 
-.project-4-text {
-  padding: 20px;
-  display: none;
-}
-
-.project-4:hover > .project-4-text {
-  display: block;
-  align-self: start;
-}
-
-.project-4:hover > .project-4-title {
-  align-self: end;
+.project-4:hover > .info-box {
+  height: 50%;
 }

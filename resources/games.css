@@ -39,7 +39,6 @@ body {
 }
 
 li {
-  padding: 10px 0;
   color: white;
   box-shadow: inset 0 0 0 0 #EEEEEE;
   transition: box-shadow 0.5s, color 0.5s;
@@ -65,7 +64,7 @@ li:hover {
 a {
   text-decoration: none;
   color: inherit;
-  width: 100%;
+  padding: 10px 0;
 }
 
 li a {

@@ -39,7 +39,6 @@ body {
 }
 
 li {
-  padding: 10px 0;
   color: white;
   box-shadow: inset 0 0 0 0 #EEEEEE;
   transition: box-shadow 0.5s, color 0.5s;
@@ -65,6 +64,7 @@ li:hover {
 a {
   text-decoration: none;
   color: inherit;
+  padding: 10px 0;
 }
 
 li a {
@@ -85,18 +85,25 @@ li a {
 }
 
 .title {
+  padding-left: 11px;
   font-size: 7vw;
+  color: #202020;
+  font-family: 'Zilla Slab Highlight', cursive;
 }
 
 .sub-title {
+  color: #202020;
   font-size: 3vw;
-  padding-left: 5px;
+  padding-left: 11px;
+  font-family: 'Zilla Slab Highlight', cursive;
 }
 
 .hello {
+  color: #202020;
   font-size: 2vw;
   padding-left: 10px;
   margin-top: 10px;
+  font-family: 'Zilla Slab Highlight', cursive;
 }
 
 .intro {
@@ -107,7 +114,7 @@ li a {
   align-self: end;
   justify-self: end;
   width: 60%;
-  color: #202020;
+  color: #303030;
 }
 
 .buttons {
