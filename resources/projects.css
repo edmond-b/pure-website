@@ -50,7 +50,7 @@ li:hover {
 }
 
 .github {
-  background-color: #950000;
+  background-color: #850000;
 }
 
 .icons {
@@ -94,14 +94,14 @@ li a {
 }
 
 .project-1:hover {
-  width: 130%;
-  height: 130%;
+  width: 150%;
+  height: 150%;
   z-index: 10;
   filter: grayscale(0%);
 }
 
 .project-1:hover > .info-box-top {
-  height: 50%;
+  height: 40%;
 }
 
 /* Project 2 */
@@ -121,14 +121,14 @@ li a {
 }
 
 .project-2:hover {
-  width: 130%;
-  height: 130%;
+  width: 150%;
+  height: 150%;
   z-index: 10;
   filter: grayscale(0%);
 }
 
 .project-2:hover > .info-box-top {
-  height: 50%;
+  height: 40%;
 }
 
 /* Project 3 */
@@ -137,7 +137,6 @@ li a {
   width: 100%;
   height: 100%;
   align-self: end;
-  height: 100%;
   background-image: url('./images/old-folio.png');
   filter: grayscale(100%);
   background-size: 100% 100%;
@@ -149,14 +148,14 @@ li a {
 }
 
 .project-3:hover {
-  width: 130%;
-  height: 130%;
+  width: 150%;
+  height: 150%;
   z-index: 10;
   filter: grayscale(0%);
 }
 
 .project-3:hover > .info-box {
-  height: 50%;
+  height: 40%;
 }
 
 /* Project 4 */
@@ -177,8 +176,8 @@ li a {
 }
 
 .project-4:hover {
-  width: 130%;
-  height: 130%;
+  width: 150%;
+  height: 150%;
   z-index: 10;
 }
 
@@ -186,10 +185,43 @@ li a {
   height: 40%;
 }
 
+/* Project link button */
+
+.project-link {
+  color: white;
+  background-color: #850000;
+  border: 2px solid #850000;
+  padding: 10px;
+}
+
+/* Table template */
+
+.table-box {
+  grid-column: 2;
+  padding: 30px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 1vw;
+}
+
+td, th {
+  border: 1px solid #BBBBBB;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #CCCCCC;
+}
+
 /* Info box bottom */
 
 .info-box {
-  display: grid;
+  grid-template-columns: 2fr 1fr;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -199,23 +231,26 @@ li a {
   width: 100%;
   height: 0;
   transition: .5s ease;
+  color: black;
+  display: grid;
 }
 
 .info-box-text {
-  color: black;
-  font-size: 20px;
+  font-size: 1vw;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 35%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  text-align: center;
+  text-align: left;
 }
 
 /* Info box top */
 
 .info-box-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   position: absolute;
   top: 0;
   left: 0;
@@ -228,13 +263,13 @@ li a {
 }
 
 .info-box-text-top {
-  color: black;
-  font-size: 20px;
+  color: white;
+  font-size: 1vw;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 35%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  text-align: center;
+  text-align: left;
 }
