@@ -131,10 +131,20 @@ p {
 
 .project-link {
   color: white;
-  background-color: #850000;
   border: 2px solid #850000;
+  background-color: #850000;
   padding: 10px;
   margin: 0 5px;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+.project-link:hover {
+  color: #850000;
+  background-color: #FFF;
+}
+
+.coming-soon {
+  cursor: not-allowed;
 }
 
 /* Unity */

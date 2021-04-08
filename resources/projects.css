@@ -192,6 +192,12 @@ li a {
   background-color: #850000;
   border: 2px solid #850000;
   padding: 10px;
+  transition: all 0.5s;
+}
+
+.project-link:hover {
+  color: #850000;
+  background-color: #FFF;
 }
 
 /* Table template */
