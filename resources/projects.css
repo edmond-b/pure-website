@@ -234,7 +234,7 @@ tr:nth-child(odd) {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   overflow: hidden;
   width: 100%;
   height: 0;
@@ -263,7 +263,7 @@ tr:nth-child(odd) {
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   overflow: hidden;
   width: 100%;
   height: 0;
@@ -280,4 +280,9 @@ tr:nth-child(odd) {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: left;
+}
+
+p {
+  padding: 10px 0;
+  line-height: 1.5vw;
 }
