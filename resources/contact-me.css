@@ -86,7 +86,7 @@ li a {
   align-self: center;
   background-color: #DDDDDD;
   padding: 20px;
-  height: 71%;
+  height: 72.5%;
   width: 50%;
 }
 
@@ -131,6 +131,7 @@ input {
 }
 
 label {
+  font-size: 1.2vw;
   clear: both;
   margin-left: 10%;
 }
