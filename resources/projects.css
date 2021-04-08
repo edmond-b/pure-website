@@ -190,7 +190,7 @@ li a {
 .project-link {
   color: white;
   background-color: #850000;
-  border: 1px solid #850000;
+  border: 2px solid #850000;
   padding: 10px;
   box-shadow: inset 0 0 0 0 #FFF;
   transition: all 0.5s;
