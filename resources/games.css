@@ -79,6 +79,10 @@ li a {
   grid-template-columns: 1fr 1fr;
 }
 
+p {
+  margin-bottom: 20px;
+}
+
 /* JavaScript */
 
 .javascript {
@@ -90,20 +94,27 @@ li a {
   justify-self: end;
   transition: all 0.5s ease-in;
   display: grid;
+  grid-template-rows: 1fr 1fr;
+  color: white;
 }
 
 .title-javascript {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  align-self: center;
+  font-size: 2.5vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  align-self: end;
+  font-family: "Roboto Slab", serif;
 }
 
 .javascript-text {
-  margin-top: 20px;
+  padding: 20px;
+  margin: 20px;
   line-height: 1.5em;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 80%;
+  height: fit-content;
+  justify-self: center;
   opacity: 0;
   transition: opacity 0.5s;
-  display: none;
 }
 
 .javascript:hover {
@@ -116,6 +127,16 @@ li a {
   opacity: 1;
 }
 
+/* Link buttons */
+
+.project-link {
+  color: white;
+  background-color: #850000;
+  border: 2px solid #850000;
+  padding: 10px;
+  margin: 0 5px;
+}
+
 /* Unity */
 
 .unity {
@@ -126,19 +147,26 @@ li a {
   width: 100%;
   transition: all 0.5s ease-in;
   display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
 .title-unity {
-  background-color: rgba(255, 255, 255, 0.7);
-  align-self: center;
+  font-size: 2.5vw;
+  background-color: rgba(255, 255, 255, 0.8);
+  align-self: end;
+  font-family: "Roboto Slab", serif;
 }
 
 .unity-text {
-  margin-top: 20px;
+  margin: 20px;
   line-height: 1.5em;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 80%;
+  height: fit-content;
+  justify-self: center;
   transition: opacity 0.5s;
   opacity: 0;
-  display: none;
+  padding: 20px;
 }
 
 .unity:hover {
@@ -148,5 +176,5 @@ li a {
 }
 
 .unity:hover .unity-text {
-  opacity: 100;
+  opacity: 1;
 }

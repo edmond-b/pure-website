@@ -286,3 +286,7 @@ p {
   padding: 10px 0;
   line-height: 1.5vw;
 }
+
+h1 {
+  font-family: 'Zilla Slab Highlight', cursive;
+}
