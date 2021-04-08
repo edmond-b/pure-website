@@ -98,7 +98,9 @@ li a {
     height: 100%;
 }
 
-.quark:hover, .doughnut:hover, .chair:hover {
+.text-1:hover .quark,
+.text-2:hover .doughnut,
+.text-3:hover .chair {
   filter: grayscale(0%);
 }
 
