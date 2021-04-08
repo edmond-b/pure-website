@@ -114,7 +114,11 @@ li a {
   align-self: end;
   justify-self: end;
   width: 60%;
-  color: #303030;
+  color: #202020;
+}
+
+.intro p {
+  font-family: "Roboto Slab", serif;
 }
 
 .buttons {
