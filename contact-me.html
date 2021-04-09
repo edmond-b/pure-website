@@ -21,6 +21,7 @@
         emailjs.sendForm('service_v8yfznr', 'template_fygj1zd', 'contact-form')
           .then(function() {
             console.log('SUCCESS!');
+            window.location.replace("http://www.edmondbullaj.com/");
           }, function(error) {
             console.log('FAILED...', error);
           });
@@ -56,21 +57,24 @@
       <div class="contact-form-box">
         <h1 class="contact-title">Contact Me</h1>
 
-        <form id="contact-form">
+
+
+        <form id="contact-form" action="./thank-you.html" method="post">
           <label for="name">Name</label>
           <input class="name" type="text" name="name" required>
           <label for="e-mail">E-mail</label>
           <input class="e-mail" type="text" name="e-mail" required>
           <label for="content">Content</label>
           <textarea class="content" rows="16" cols="80" name="content" required></textarea>
-          <input class="submit-button" type="submit" value="Send">
+          <input class="submit-button" type="submit" value="Send" onclick="confirm()">
         </form>
-        <!-- <script language="JavaScript">
-          var formvalidator = new Validator("contact-form");
-          formvalidator.addValidation("name", "req", "Please provide your name");
-          formvalidator.addValidation("e-mail", "req", "Please provide your e-mail");
-          formvalidator.addValidation("e-mail", "email", "Invalid e-mail address!");
-        </script> -->
+        <script>
+          let sent = 0;
+          function confirm() {
+            alert("Message Sent!");
+            sent = 1;
+          }
+        </script>
       </div>
     </div>
   </body>
