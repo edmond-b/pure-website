@@ -18,7 +18,7 @@
       window.onload = function() {
         document.getElementById('contact-form').addEventListener('submit', function(event) {
         event.preventDefault();
-        emailjs.sendForm('contact_service', 'contact_form', this)
+        emailjs.sendForm('service_v8yfznr', 'template_fygj1zd', 'contact-form')
           .then(function() {
             console.log('SUCCESS!');
           }, function(error) {
